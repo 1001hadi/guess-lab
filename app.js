@@ -8,7 +8,9 @@ const actualAnswer = Math.floor(Math.random() * 100);
 let playerAnswer;
 
 for (let i = 0; i < 5; i++) {
-  playerAnswer = Number(window.prompt("guess from 1 to 20"));
+  playerAnswer = Number(window.prompt("guess from 1 to 100"));
+  // make sure player only enter number
+  if (isNaN(playerAnswer)) window.alert("Please enter numbers between 1 - 100");
 
   if (actualAnswer === playerAnswer) {
     window.alert(`Good job ${actualAnswer} is the correct answer`);
