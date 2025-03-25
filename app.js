@@ -1,10 +1,6 @@
-// const body = document.querySelector("body");
-
 window.alert(`Let's play the guessing game!`);
 
 const actualAnswer = Math.floor(Math.random() * 100);
-// console.log(actualAnswer);
-
 let playerAnswer;
 
 for (let i = 0; i < 5; i++) {
@@ -21,10 +17,12 @@ for (let i = 0; i < 5; i++) {
   } else if (playerAnswer < actualAnswer) {
     window.alert("too low");
   }
+  // if loop over let the user know the answer
   if (i === 4) {
     window.alert(`you missed, ${actualAnswer} was the answer!`);
   }
 
+  /////// With switch statement ---------------->
   // switch (true) {
   //   case actualAnswer === playerAnswer:
   //     window.alert(`Good job ${actualAnswer} is the correct answer`);
