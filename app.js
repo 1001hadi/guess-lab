@@ -22,6 +22,7 @@ for (let i = 0; i < 3; i++) {
   switch (true) {
     case actualAnswer === playerAnswer:
       window.alert(`Good job ${actualAnswer} is the correct answer`);
+      i = 3;
       break;
     case playerAnswer > actualAnswer:
       window.alert("too high");
